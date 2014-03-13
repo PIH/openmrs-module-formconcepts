@@ -35,6 +35,8 @@
 	<properties>
 		<openMRSVersion>1.8.2</openMRSVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		 <htmlformentryModuleVersion>2.0.5-SNAPSHOT</htmlformentryModuleVersion>
+		 <metadatasharingModuleVersion>1.0.9</metadatasharingModuleVersion>
 	</properties>
 
 		<dependencies>
@@ -45,7 +47,14 @@
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>htmlformentry-api</artifactId>
-				<version>2.0.5-SNAPSHOT</version>
+				<version>${htmlformentryModuleVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>metadatasharing-api</artifactId>
+				<version>${metadatasharingModuleVersion}</version>
 				<scope>provided</scope>
 			</dependency>
 

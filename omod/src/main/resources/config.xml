@@ -15,6 +15,16 @@
 	<require_version>${openMRSVersion}</require_version>
 	<!-- / Module Properties -->
 
+	<!-- Required Modules -->
+	<require_modules>																											
+		<require_module version="${htmlformentryModuleVersion}">
+			org.openmrs.module.htmlformentry
+		</require_module>
+		<require_module version="${metadatasharingModuleVersion}">
+			org.openmrs.module.metadatasharing
+		</require_module>
+	</require_modules>
+	<!-- / Required Modules -->
 	
 	<!-- Module Activator -->
 	<activator>${project.parent.groupId}.${project.parent.artifactId}.FormconceptsActivator</activator>

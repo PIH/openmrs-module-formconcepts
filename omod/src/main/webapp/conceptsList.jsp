@@ -3,10 +3,17 @@
 
 <%@ include file="template/localHeader.jsp"%>
 
-   <c:forEach var="concept" items="${formConcepts}">
-		
-         ${concept.conceptId},
+<form method="post" action="getPackage.form">
+<textarea id="conceptIds" name="conceptIds" rows="4" cols="50">
 
-	</c:forEach>
-
+</textarea>
+<br/>
+<input type="submit" value="Generate metadata package"/>
+</form>
+<script>
+$j(document).ready(function(){
+	var concepts = "${formConcepts}";
+	 $j("#conceptIds").val(concepts);
+	});
+</script>
 <%@ include file="/WEB-INF/template/footer.jsp"%>
