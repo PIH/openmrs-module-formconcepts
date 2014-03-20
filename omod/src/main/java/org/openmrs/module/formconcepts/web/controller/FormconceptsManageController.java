@@ -58,7 +58,7 @@ public class FormconceptsManageController {
 		model.addAttribute("formConcepts", str.toString());
 	}
 	
-	@RequestMapping(value = "/module/formconcepts/getPackage.form", method = RequestMethod.POST)
+	@RequestMapping(value = "/module/formconcepts/getPackage", method = RequestMethod.POST)
 	public void geratePackage(
 			@RequestParam(required = true, value = "conceptIds") String conceptIds,
 			ModelMap model) {
