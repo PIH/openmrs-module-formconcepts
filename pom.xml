@@ -21,28 +21,6 @@
 		<url>http://openmrs.org</url>
 	</organization>
 
-	<scm>
-		<connection>scm:git:git@github.com:PIH/openmrs-module-formconcepts.git</connection>
-		<developerConnection>scm:git:git@github.com:PIH/openmrs-module-formconcepts.git</developerConnection>
-		<url>https://github.com/PIH/openmrs-module-formconcepts/</url>
-		<tag>HEAD</tag>
-	</scm>
-
-
-	<distributionManagement>
-		<repository>
-			<id>openmrs-repo-modules</id>
-			<name>Modules</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/modules/</url>
-		</repository>
-		<snapshotRepository>
-			<id>openmrs-repo-snapshots</id>
-			<name>OpenMRS Snapshots</name>
-			<url>http://mavenrepo.openmrs.org/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
-
-
 	<modules>
 		<module>api</module>
 		<module>omod</module>
@@ -149,6 +127,25 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/PIH/openmrs-module-formconcepts</developerConnection>
+		<url>https://github.com/PIH/openmrs-module-formconcepts</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>openmrs-repo-modules-pih</id>
+			<name>OpenMRS PIH Modules</name>
+			<url>https://openmrs.jfrog.io/artifactory/modules-pih/</url>
+		</repository>
+		<snapshotRepository>
+			<id>openmrs-repo-modules-pih-snapshots</id>
+			<name>OpenMRS PIH Module Snapshots</name>
+			<url>https://openmrs.jfrog.io/artifactory/modules-pih-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
