@@ -16,50 +16,23 @@ package org.openmrs.module.formconcepts;
 
 import org.apache.commons.logging.Log; 
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.module.BaseModuleActivator;
 import org.openmrs.module.ModuleActivator;
 
 /**
  * This class contains the logic that is run every time this module is either started or stopped.
  */
-public class FormconceptsActivator implements ModuleActivator {
+public class FormconceptsActivator extends BaseModuleActivator {
 	
 	protected Log log = LogFactory.getLog(getClass());
-		
-	/**
-	 * @see ModuleActivator#willRefreshContext()
-	 */
-	public void willRefreshContext() {
-		log.info("Refreshing Form concepts Module");
-	}
-	
-	/**
-	 * @see ModuleActivator#contextRefreshed()
-	 */
-	public void contextRefreshed() {
-		log.info("Form concepts Module refreshed");
-	}
-	
-	/**
-	 * @see ModuleActivator#willStart()
-	 */
-	public void willStart() {
-		log.info("Starting Form concepts Module");
-	}
-	
+
 	/**
 	 * @see ModuleActivator#started()
 	 */
 	public void started() {
 		log.info("Form concepts Module started");
 	}
-	
-	/**
-	 * @see ModuleActivator#willStop()
-	 */
-	public void willStop() {
-		log.info("Stopping Form concepts Module");
-	}
-	
+
 	/**
 	 * @see ModuleActivator#stopped()
 	 */
