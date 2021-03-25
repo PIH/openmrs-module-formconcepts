@@ -4,7 +4,7 @@
 
 	<groupId>org.openmrs.module</groupId>
 	<artifactId>formconcepts</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Form concepts Module</name>
 	<description>Module to get concepts in a form and generate a metadata file of these concepts</description>
@@ -131,7 +131,7 @@
 	<scm>
 		<developerConnection>scm:git:https://github.com/PIH/openmrs-module-formconcepts</developerConnection>
 		<url>https://github.com/PIH/openmrs-module-formconcepts</url>
-		<tag>formconcepts-1.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
